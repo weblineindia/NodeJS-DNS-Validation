@@ -65,7 +65,7 @@ valid('smtp-mail.outlook.com')
 
 ## Need Help? 
 
-We also provide a free, basic support for all users who want to use this VueJS Currency input in their software project. In case you want to customize this Currency input to suit your development needs, then feel free to contact our [NodeJS developers](https://www.weblineindia.com/hire-node-js-developer.html).
+We also provide a free, basic support for all users who want to use dns validation in their software project. In case you want to customize this dns validation component as your development needs, then feel free to contact our [NodeJS developers](https://www.weblineindia.com/hire-node-js-developer.html).
 
 -----
 
