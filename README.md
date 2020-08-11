@@ -33,15 +33,15 @@ yarn add nodejs-weblineindia-dns-validation
 Use `isValidDNS` function to validate dns server:
 
 ```js
-const dns = require('nodejs-weblineindia-dns-validation');
+const { isValidDNS } = require('nodejs-weblineindia-dns-validation');
 OR
-import dns from 'nodejs-weblineindia-dns-validation'
+import { isValidDNS } from 'nodejs-weblineindia-dns-validation'
 
-let isvalid = false
-async function valid(serveraddress) {
+async function valid(serverAddress) {
     try {
         // call this function in async function
-        isvalid = await dns.isValidDNS(serveraddress)
+        const result = await isValidDNS(serverAddress);
+        console.log("Result ",result);
     } catch (error) {
         console.log(error)
     }
