@@ -1,18 +1,14 @@
-const dns = require('dns')
+const { resolveAny } = require('dns');
 
-function isValidDNS(serveraddress) {
-    let isValid = false
-    return new Promise((resolve) => {
-        dns.resolveAny(serveraddress, (err, addresses) => {
-            if (err) {
-                resolve(isValid)
-            }
-            if (addresses !== undefined && addresses.length > 0) {
-                isValid = true
-            }
-            resolve(isValid)
-        })
-    })
-}
-
-exports.isValidDNS = isValidDNS
+/**
+ * Method to validate DNS
+ * @param {string} serverAddress
+ * @returns {Promise<Boolean>}
+ */
+exports.isValidDNS = (serverAddress) => new Promise((resolve) => {
+  resolveAny(serverAddress, (error, address) => {
+    if (error) resolve(false);
+    else if (address.length > 0) resolve(true);
+    else resolve(false);
+  });
+});
