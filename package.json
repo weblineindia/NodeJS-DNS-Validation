@@ -1,6 +1,6 @@
 {
   "name": "nodejs-weblineindia-dns-validation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A node.js component for validate DNS server with `nodejs-weblineindia-dns-validation`",
   "homepage": "https://www.weblineindia.com/software-development-resources.html",
   "repository": "https://github.com/weblineindia/NodeJS-DNS-Validation",
